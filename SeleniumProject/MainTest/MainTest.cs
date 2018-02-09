@@ -8,7 +8,7 @@ namespace SeleniumProject
     //Local Browsers
     [TestFixture("Chrome_Local")]
     [TestFixture("IE_Local")]
-    [TestFixture("Firefox_Local")]
+    //[TestFixture("Firefox_Local")]
 
     /*
     [TestFixture("IE11_Browser")]
@@ -147,20 +147,20 @@ namespace SeleniumProject
         
         }
 
-        [Test(Description = "UFACTS_Search"), TestCaseSource(typeof(TestDataConstructors), "GetuFACTS_SearchData")]
-        public void UFACTS_Search(Dictionary<string, string> inputDataCollection)
-        {
-            if (includeTestCase)
-            {
-                ignoredScriptsFlag = false;
-                string testCasePath = string.Empty;
-                Helper.CreateFolder(screenShotPath, "uFACTS_Search/" + inputDriverName + "_DataSet_" + countDataSet, out testCasePath);
-                SeleniumDriverObject.currentTestCasePath = testCasePath;
-                UFACTS_Search ObjuFACTS_Search = new UFACTS_Search();
+        //[Test(Description = "UFACTS_Search"), TestCaseSource(typeof(TestDataConstructors), "GetuFACTS_SearchData")]
+        //public void UFACTS_Search(Dictionary<string, string> inputDataCollection)
+        //{
+        //    if (includeTestCase)
+        //    {
+        //        ignoredScriptsFlag = false;
+        //        string testCasePath = string.Empty;
+        //        Helper.CreateFolder(screenShotPath, "uFACTS_Search/" + inputDriverName + "_DataSet_" + countDataSet, out testCasePath);
+        //        SeleniumDriverObject.currentTestCasePath = testCasePath;
+        //        UFACTS_Search ObjuFACTS_Search = new UFACTS_Search();
 
-                ObjuFACTS_Search.UFACTS_SearchTest(driver, inputDataCollection, testCasePath, inputDriverName);
-            }
-        }
+        //        ObjuFACTS_Search.UFACTS_SearchTest(driver, inputDataCollection, testCasePath, inputDriverName);
+        //    }
+        //}
 
         #endregion Test methods
     }
