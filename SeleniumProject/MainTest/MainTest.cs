@@ -7,7 +7,7 @@ namespace SeleniumProject
 {
     //Local Browsers
     [TestFixture("Chrome_Local")]
-    [TestFixture("IE_Local")]
+    //[TestFixture("IE_Local")]
     //[TestFixture("Firefox_Local")]
 
     /*
